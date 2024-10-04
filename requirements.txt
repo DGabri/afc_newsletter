@@ -1,0 +1,10 @@
+beautifulsoup4==4.12.3
+llama-index-llms-groq==0.2.0
+llama-index-llms-ollama==0.1.5
+requests==2.32.3
+spacy==3.7.6
+virtualenv
+deep-translator
+langdetect
+webdriver-manager
+selenium

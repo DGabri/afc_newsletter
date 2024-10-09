@@ -8,3 +8,4 @@ deep-translator
 langdetect
 webdriver-manager
 selenium
+crawl4ai

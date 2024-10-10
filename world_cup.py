@@ -269,7 +269,7 @@ llm_model = "llama3.2:3b-instruct-q4_1"
 llm = Ollama(model=llm_model, request_timeout=400)
 
 llm_model = "llama-3.1-70b-versatile"
-llm = Groq(model=llm_model, api_key="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")
+llm = Groq(model=llm_model, api_key="")
 
 
 prompt = f"""

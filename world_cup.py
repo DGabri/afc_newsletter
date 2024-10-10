@@ -28,10 +28,11 @@ def translate_to_target_language(input_text, target_language, default_src_langua
     return complete_translation
 
 def scrape_url(url):
-    response = requests.get(url, headers={'User-Agent': 'Mozilla/5.0'})
+    response = requests.get(url, headers={"User-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"})
     soup = BeautifulSoup(response.content, 'html.parser')
     return soup
 
+scrape_url("https://www.tecnomat.it/")
 ################################################################################
 ## nbc_sport_news
 
@@ -258,6 +259,7 @@ for news_outlet in news_outlets:
 
 
 translated_articles =remove_list_duplicates(translated_articles)
+translated_articles
 
 from llama_index.llms.groq import Groq
 from llama_index.llms.ollama import Ollama
@@ -267,7 +269,7 @@ llm_model = "llama3.2:3b-instruct-q4_1"
 llm = Ollama(model=llm_model, request_timeout=400)
 
 llm_model = "llama-3.1-70b-versatile"
-llm = Groq(model=llm_model, api_key="")
+llm = Groq(model=llm_model, api_key="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")
 
 
 prompt = f"""
